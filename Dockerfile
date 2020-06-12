@@ -1,8 +1,10 @@
 FROM ubuntu
 
 RUN apt-get update && \
-    apt-get -y install python3 python3-pip vim && \
-    pip3 install flask
+    apt-get -y install python3 git python3-pip vim && \
+    pip3 install flask && \
+
+
 
 COPY app.py /opt/app.py
 
